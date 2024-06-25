@@ -1,1 +1,16 @@
-Linux commands.
+
+==========Basic Commands=======
+> mkdir dirname (to create directory)
+> touch filename (to make file)
+> cd dirname (to go iside directory)
+> rmdir dirname (to remove empty directory)
+> rm -rf dirname (tp remove non-empty directory)
+> rm -f filename (to remove file)
+> cp filename directoryname (to file file)
+> mv filename dirname ( to move file)
+> mv old-file-name new-file-name ( to rename file)
+> cat filename( to read the content of file)
+> echo "something" (to print something)
+> echo "something" >> filename ( to append the content)
+> echo "something" > filename ( to override the content)
+> history (to check history)
