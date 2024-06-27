@@ -1,4 +1,4 @@
-
+==========Day-1=====================
 ==========Basic Commands=======
 > mkdir dirname (to create directory)
 > touch filename (to make file)
@@ -14,7 +14,7 @@
 > echo "something" >> filename ( to append the content)
 > echo "something" > filename ( to override the content)
 > history (to check history)
-====================Day 2===============================
+====================Day-2===============================
 > touch file1 file2 file3 file4 (to create multiplefiles at a single time)
 > touch example{1..10}.txt (to create files at a single time)
 > rm -f file* (to remove file starting with "file")
@@ -24,6 +24,35 @@
 > chown ownername file/dirname -R( to change the owner of file or dir recursively)
 > chgrp groupname file/dirname -R( to change the group of file or dir recursively)> chown ownername file/dirname -R( to change the owner of file or dir recursively)
 > chown username:groupname -R file/dirname (to change group and owner in a single command)
+====================Day-3======================
+============VIM EDITOR========================
+vim is a file editor.
+> vim file-name (to create file through vim)
+two modes of file
+1-Escape: you cannot write anything in file in esscape mode
+2-Insert: press i to go to insert mode to write something
+NOTE:Commands will work only in escape mode
+> yy (to copy a line)
+> p (to paste)
+> gg (to go at the top of the file)
+> shift+g (to go at the bottom of the file)
+> shift+m (to go at the middle of the file)
+> dd (to delete line)
+> 10 dd (to delete 10 lines at a time)
+> esc:set number (to set number)
+> esc:10 (to go to line number 10)
+> esc:%s/oldword/newword (to substitute old word with new word inside file)
+> esc:wq (to save and quit)
+> sed 's/oldword/newword/' (to substitute old word with new word inside file)
+> head file-name (to read the top content of file, by default it will show 10 lines)
+> tail file-name (to read the bottom content of file, by default it will show 10 lines)
+> head -5 file-name (to read first five lines of file)
+> tail -5 file-name (to read bottom five lines of file)
+
+==============Link Management==============================
+> ln -s /var/log/secure secure (to create link)
+> unlink secure (to delete link)
+> alias mk=mkdir (to make shortcut of command)
 > chmod 777 file/dirname (to change permissions of file/dir)
 Note: r=read w=write= x=execute
 read=4 write=2 execute=1
