@@ -24,6 +24,10 @@
 > chown ownername file/dirname -R( to change the owner of file or dir recursively)
 > chgrp groupname file/dirname -R( to change the group of file or dir recursively)> chown ownername file/dirname -R( to change the owner of file or dir recursively)
 > chown username:groupname -R file/dirname (to change group and owner in a single command)
+> chmod 777 file/dirname (to change permissions of file/dir)
+Note: r=read w=write= x=execute
+read=4 write=2 execute=1
+> echo $? (to check the status of previous command)
 ====================Day-3======================
 ============VIM EDITOR========================
 vim is a file editor.
@@ -53,7 +57,4 @@ NOTE:Commands will work only in escape mode
 > ln -s /var/log/secure secure (to create link)
 > unlink secure (to delete link)
 > alias mk=mkdir (to make shortcut of command)
-> chmod 777 file/dirname (to change permissions of file/dir)
-Note: r=read w=write= x=execute
-read=4 write=2 execute=1
-> echo $? (to check the status of previous command)
+
