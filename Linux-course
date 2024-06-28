@@ -57,4 +57,17 @@ NOTE:Commands will work only in escape mode
 > ln -s /var/log/secure secure (to create link)
 > unlink secure (to delete link)
 > alias mk=mkdir (to make shortcut of command)
-
+==============ASSIGNEMENT-1================================
+Spin up a new VM
+Set hostname vm101
+Install tree, telnet, epel-release
+reboot
+add users:
+ali, hamza, qamar
+assign a password to each user
+(take a duplicate tab login as ali and take exit)
+create directory ali-work, hamza-work, qamar-work
+Assign ownership recursively to each directory
+Set permission recursively 666 to each directory 
+create links of /var/log/messages, /var/log/secure in /private-project
+move ali-work, hamza-work, qamar-work to /private-project
