@@ -71,3 +71,24 @@ Assign ownership recursively to each directory
 Set permission recursively 666 to each directory 
 create links of /var/log/messages, /var/log/secure in /private-project
 move ali-work, hamza-work, qamar-work to /private-project
+=================Day-4================================
+============yum============================
+> rpm -qa <packaghe-name> (to check package installed or not)
+> yum -y update ( to update the syatem)
+> yum -y install <package-name> ( to install package)
+> yum -y remove <package-name> ( to remove package)
+> yum -y upgrade (to check available updates)
+============user-management====================
+> useradd <user-name> (to add user)
+> passwd <user-name> (to asssign password)
+> cat /etc/passwd (user related file)
+> cat /etc/shadow (user related file)
+> cat /etc/group (group related file)
+> groupadd <group-name> (to create group)
+> useradd -G <group-name> -c "any-comment" <user-name> (to add new user in the group)
+> usermod -G <group-name> -c "any-comment" <user-name> (to add EXISTING user in the group)
+> gpasswd -d <user-name> <group-name> (to delete user from group)
+> userdel <user-name> (to delete user)
+> rm -rf <user directory name> (to delete user's directory)
+> userdel -r <user-name> (to delete user and it's directory)
+
