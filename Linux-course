@@ -91,4 +91,20 @@ move ali-work, hamza-work, qamar-work to /private-project
 > userdel <user-name> (to delete user)
 > rm -rf <user directory name> (to delete user's directory)
 > userdel -r <user-name> (to delete user and it's directory)
+==============Day-5===============================
+> chmod o+wx file.txt (to assign write and execute permission to others)
+> chmod g+wx file.txt (to assign write and execute permission to group)
+> chmod u+wx file.txt (to assign write and execute permission to user)
+> chmod o-wx file.txt (to remove write and execute permission from others)
+> chmod g-wx file.txt (to remove write and execute permission from group)
+> chmod u-wx file.txt (to remove write and execute permission from user)
+===============crontab=============================
+> crontab -l (to check schedule)
+> crontab -e (to set schedule)
+ syntax * * * * * (min(0-59) hour(0-23) dayofmonth(1-31) month(1-12) dayofweek(0-6, 0 mean sunday)
+> 52 9 * * * mkdir /root/dir (to create dir with the help of crontab)
+> crontab -r (to remove schedule)
+> crontab -e -u username(to set job for local user)
+> crontab -r -u username (to remove job for local user)
+
 
