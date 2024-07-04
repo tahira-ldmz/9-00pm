@@ -106,5 +106,19 @@ move ali-work, hamza-work, qamar-work to /private-project
 > crontab -r (to remove schedule)
 > crontab -e -u username(to set job for local user)
 > crontab -r -u username (to remove job for local user)
+===================Day-6============================
+> df -h ( to check disk free and -h is used to make it human readable)
+> /etc/cron.deny (used to restrict user from setting cron jobs)
+> at <time> (to schedule task)
+> atrm 2 (to remove scheduling job)
+> cat /etc/passwd | grep any-word (use to grep any word from file)
+> grep -i -C2 'word' /etc/passwd ( to grep lines around the word)
+> grep -i -A2 'word' /etc/passwd ( to grep lines after the word)
+> grep -i -B2 'word' /etc/passwd ( to grep lines before the word)
+> grep -i -v 'root' /etc/passwd (to avoid string root)
+> find /etc -name  ifcfg-enp0s3 (to find file by name)
+> find /etc -type f -size +10M (to find file by size)
+>
+
 
 
