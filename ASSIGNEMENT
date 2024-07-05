@@ -1,0 +1,59 @@
+Spin up a new VM
+Set hostname jump-server
+Install epel-release
+reboot
+add users:
+John, sunny, maria
+assign a password to each user
+(take a duplicate tab login as sunny and take exit)
+create directory john-work, sunny-work, maria-work
+Assign ownership recursively to each directory
+Set permission recursively 666 to each directory
+Install below Packages:
+tree, git, telnet 
+create links of /var/log/messages, /var/log/secure in /project-2025
+move john-work, sunny-work, maria-work to /project-2025 
+
+ASSIGNEMENT:2
+
+Task 1:
+Open the /etc/passwd file:
+use the grep command to search the string root
+Use grep to find lines that around the string root
+Use grep to search 3  lines before the string root
+Use grep to search 3  lines after the string root
+
+
+Task 2:
+Create a directory structure as follows:
+project
+├── file1.txt
+├── file2.log
+└── subdir
+    ├── file3.txt
+    └── file4.log
+
+Use find to list all .txt files in the project directory and its subdirectories.
+Use find to delete all .log files.
+
+Task 3:
+Schedule the following task using crontab:
+set a job to check the output of df -h command and redirect that output to /proc/cronfile.
+
+
+4. vim Editor
+Task 4:
+Use vim to create and edit a file named notes.txt with the following requirements:
+
+Write a brief paragraph about your experience learning Linux.
+Use vim commands to copy, paste, and delete text within notes.txt.
+Save the file and exit.
+
+5. User Management
+Task 5:
+Perform the following user management tasks:
+
+Create a new user named student.
+Set a password for the student user.
+Add the student user to the sudo group.
+Delete the student user and its home directory.
