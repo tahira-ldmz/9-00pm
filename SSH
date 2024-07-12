@@ -1,0 +1,34 @@
+ ===========SSH========
+
+SSH stands for Secure Shell. 
+It is a cryptographic network protocol that allows secure communication between two computers over an unsecured network.
+SSH is widely used for secure remote access to a computer system, typically via a command-line interface.
+
+---For password base authentication---
+> ssh root@<ip-of-client>
+> Enter password of client server
+> login success....take exit
+> ssh username@<ip-of-client>
+> Enter passord of client server
+> login success ...take exit
+
+---key base authentication----
+> ssh-key-gen 
+4 times Enter
+> ssh-copy-id <ip-of-client>
+> Enter one time password
+> ssh <ip-of-client>
+> login success..take exit
+
+Question1: How to restrict root or any other user?
+
+to go client server--> cd /etc/ssh--> vim sshd_config--> go to permit root login=yes (change yes to no) save nad quit
+> systemctl restart sshd (for root user)
+> to go client server--> cd /etc/ssh--> vim sshd_config--> below maxservice 10--> DenyUser username--> save and quit
+> systemctl restart sshd (for local user)
+
+Question2: How to restrict any command?
+
+go to client server
+> cd .ssh--> ll--> vim authorized_key
+command="/usr/bin/top" save and quit
