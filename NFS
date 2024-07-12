@@ -1,0 +1,27 @@
+========NFS========
+
+------HOST-CONFIGURATION------
+> yum -y install nfs-utils
+> systemctl restart nfs
+> systemctl enable nfs
+> systemctl status nfs
+> firewall-cmd --permanent --add-port=111/tcp
+> firewall-cmd --permanent --add-port=111/udp
+> firewall-cmd --permanent --add-port=2049/tcp
+> firewall-cmd --permanent --add-port=2049/udp
+> firewall-cmd --permanent --add-service=rpc-bind
+> firewall-cmd --permanent --add-service=mountd
+> firewall-cmd --reload
+> firewall-cmd --lista-all
+> mkdir /dir-name1
+> vim /etc/exports
+/dir-name ip-of-client(rw,sync,no_root_squash)...save and quit
+> exportfs -a
+
+-------CLIENT-CONFIGURATION-------
+
+> showmount -e ip-of-host
+> mkdir /dir-name2
+> vim /etc/fstab
+ip-of-host:/dir-name1 /dir-name2 nfs defaults 0 0....save and quit
+> mount /dir-name2
