@@ -7,18 +7,18 @@ SSH is widely used for secure remote access to a computer system, typically via 
 ---For password base authentication---
 > ssh root@<ip-of-client>
 > Enter password of client server
-> login success....take exit
+> login successful....take exit
 > ssh username@<ip-of-client>
-> Enter passord of client server
-> login success ...take exit
+> Enter password of client server
+> login successful ...take exit
 
 ---key base authentication----
-> ssh-key-gen 
+> ssh-keygen 
 4 times Enter
 > ssh-copy-id <ip-of-client>
 > Enter one time password
 > ssh <ip-of-client>
-> login success..take exit
+> login successful..take exit
 
 Question1: How to restrict root or any other user?
 
