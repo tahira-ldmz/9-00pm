@@ -118,7 +118,25 @@ move ali-work, hamza-work, qamar-work to /private-project
 > grep -i -v 'root' /etc/passwd (to avoid string root)
 > find /etc -name  ifcfg-enp0s3 (to find file by name)
 > find /etc -type f -size +10M (to find file by size)
->
+
+ ============TAR COMMAND============
+
+ useful flags
+ -c --create create an archive file
+ -t --list list the content of archive
+ -x --extract extract an archive
+ -v --verbose show the files being archive
+ -f --file follow this option with the archive file name to create
+ -p --preserve preserve the original permissions when extracting
+ 
+> tar -cf mybackup.tar myapp1.log myapp2.log myapp3.log (to create archive file)
+> tar -tf mybackup.tar (to check the list of files inside mybackup.tar)
+> tar -xf mybackup.tar (to extract files)
+> tar -czf /root/etcbackup.tar.gz /etc (to create zip file)
+> tar -cjf /root/etcbackup.tar.xz /etc (to compress te file)
+> tar -xzf etcbackup.tar.gz (to extract zip file) 
+
+
 
 
 
