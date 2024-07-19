@@ -118,7 +118,10 @@ move ali-work, hamza-work, qamar-work to /private-project
 > grep -i -v 'root' /etc/passwd (to avoid string root)
 > find /etc -name  ifcfg-enp0s3 (to find file by name)
 > find /etc -type f -size +10M (to find file by size)
-
+============Backup commands=========
+cp file1 file2 ( copy files on same server)
+scp file1 <ip-of-otherserver>: (to copy file on other server'root directory)
+scp file1 <ip-of-otherserver>:/tmp (to copy file on other server'tmp directory)
  ============TAR COMMAND============
 
  useful flags
